@@ -31,7 +31,7 @@ const start = () => {
         } else if (querry.data === '2'){
             return await bot.sendAudio(chatId,audioArray[1])
         } else if( querry.data === '3'){
-            return await bot.sendMessage(chatId, `Пока не придумал`)
+            return await bot.sendMessage(chatId, 'https://coub.com/view/129iaw')
         }
     })
 }
