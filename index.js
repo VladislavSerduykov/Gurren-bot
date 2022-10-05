@@ -1,8 +1,8 @@
 const TelegramApi = require ('node-telegram-bot-api')
 const {audioChoose} = require('./audio')
-const token = '5310221010:AAGp9Npf9M_P_jF7qSOrpsB-uX9dZTWwnPs'
+require('dotenv').config()
 
-const bot = new TelegramApi (token, {polling: true})
+const bot = new TelegramApi (process.env.token, {polling: true})
 // Массив с аудио
 let audioArray = ['CQACAgIAAxkBAAEYusNjPdZ5X7iZS-DBTi-LXT-XAy1_XgACpSAAAsZC8UlqKTsuCz76GCoE','CQACAgIAAxkBAAEYuupjPd08GglA00QgozjcwX1Rn-ob3QAC2iAAAsZC8UkXv0XzpsSTbioE'];
 
